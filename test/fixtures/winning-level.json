@@ -1,0 +1,90 @@
+{
+  "name": "fixture-winning-level",
+  "notes": "Test fixture, written by a script for the tests, not by the agent: one hopper per note, gate opened 0.883 s before the onset.",
+  "parts": [
+    {
+      "id": "floor",
+      "type": "floor"
+    },
+    {
+      "id": "h1",
+      "type": "hopper",
+      "x": 3,
+      "y": 9,
+      "marbles": 1,
+      "gate": [
+        {
+          "open": 0.616667
+        }
+      ]
+    },
+    {
+      "id": "barC5",
+      "type": "bar",
+      "x": 3.1,
+      "y": 5,
+      "pitch": "C5",
+      "angle": -20
+    },
+    {
+      "id": "h2",
+      "type": "hopper",
+      "x": 7,
+      "y": 9,
+      "marbles": 1,
+      "gate": [
+        {
+          "open": 1.116667
+        }
+      ]
+    },
+    {
+      "id": "barE5",
+      "type": "bar",
+      "x": 7.1,
+      "y": 5,
+      "pitch": "E5",
+      "angle": -20
+    },
+    {
+      "id": "h3",
+      "type": "hopper",
+      "x": 11,
+      "y": 9,
+      "marbles": 1,
+      "gate": [
+        {
+          "open": 1.616667
+        }
+      ]
+    },
+    {
+      "id": "barG5",
+      "type": "bar",
+      "x": 11.1,
+      "y": 5,
+      "pitch": "G5",
+      "angle": -20
+    },
+    {
+      "id": "h4",
+      "type": "hopper",
+      "x": 15,
+      "y": 9,
+      "marbles": 1,
+      "gate": [
+        {
+          "open": 2.366667
+        }
+      ]
+    },
+    {
+      "id": "barC6",
+      "type": "bar",
+      "x": 15.1,
+      "y": 5,
+      "pitch": "C6",
+      "angle": -20
+    }
+  ]
+}

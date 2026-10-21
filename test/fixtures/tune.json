@@ -1,0 +1,9 @@
+{
+  "title": "Fixture: four rising notes",
+  "notes": [
+    { "pitch": "C5", "t": 1.5 },
+    { "pitch": "E5", "t": 2.0 },
+    { "pitch": "G5", "t": 2.5 },
+    { "pitch": "C6", "t": 3.25 }
+  ]
+}

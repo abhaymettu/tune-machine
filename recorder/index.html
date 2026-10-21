@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Tune Machine</title>
+<style>
+  :root { color-scheme: dark; }
+  html, body { margin: 0; background: #0b0d12; height: 100%; }
+  body { display: grid; place-items: center; }
+  canvas { width: min(100vw, 177.78vh); aspect-ratio: 16 / 9; display: block; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1280" height="720"></canvas>
+<script type="module">
+  // The engine's own player draws the board from recorded frames; overlay.js adds the piano roll.
+  import { Player } from "/engine/player.js";
+  import { drawOverlay } from "./overlay.js";
+  const canvas = document.getElementById("c");
+  const player = new Player(canvas);
+  window.reel = player;
+  window.drawFrame = (n) => { player.seek(n); drawOverlay(canvas.getContext("2d"), player, player.frame); };
+  const params = new URLSearchParams(location.search);
+  fetch(params.get("reel") ?? "/reel.json").then((r) => r.json()).then((obj) => { player.load(obj); window.drawFrame(0); window.ready = true; });
+</script>
+</body>
+</html>

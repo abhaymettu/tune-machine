@@ -1,0 +1,19 @@
+{
+  "name": "tune-machine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An agent writes a short tune, then builds a marble machine in goldberg-engine that plays it.",
+  "type": "module",
+  "bin": {
+    "tune-machine": "bin/run.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "run": "node bin/run.js",
+    "record": "node bin/record.js"
+  },
+  "license": "MIT"
+}
